@@ -1,36 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wordle Solver</title>
-    <link rel="stylesheet" href="style.css">
-    <!--<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>//-->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script type="module" crossorigin src="/assets/index.c81663ab.js"></script>
+    <link rel="modulepreload" href="/assets/vendor.9d9f6ef6.js">
+    <link rel="stylesheet" href="/assets/index.26dfe787.css">
   </head>
   <body>
-
-    <div id="app">
-        <ol style="height: 500px; overflow: scroll;">
-            <li v-for="word in filtered">
-              {{ word }}
-            </li>
-          </ol>
-          <div id='keeb'>
-            <input maxlength='1' v-model='l1' v-bind:class='class1'/>
-            <input maxlength='1' v-model='l2' v-bind:class='class2'/>
-            <input maxlength='1' v-model='l3' v-bind:class='class3'/>
-            <input maxlength='1' v-model='l4' v-bind:class='class4'/>
-            <input maxlength='1' v-model='l5' v-bind:class='class5'/>
-            <br />
-            <span v-for="letter in letters">
-                <input type="checkbox" :id="letter['v']" v-model="letter['c']" /><label :for="letter['v']">{{ letter['v'] }}</label><br />
-            </span>
-          </div>
-    </div>
-      
-      
-	<script src="index.min.js"></script>
+    <div id="app"></div>
+    
   </body>
 </html>
